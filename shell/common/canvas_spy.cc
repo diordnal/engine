@@ -53,7 +53,11 @@ void DidDrawCanvas::willRestore() {}
 
 void DidDrawCanvas::didConcat(const SkMatrix& matrix) {}
 
+#ifdef SK_SUPPORT_LEGACY_DIDCONCAT44
 void DidDrawCanvas::didConcat44(const SkScalar[]) {}
+#else
+void DidDrawCanvas::didConcat44(const SkM44&) {}
+#endif
 
 void DidDrawCanvas::didScale(SkScalar, SkScalar) {}
 
@@ -122,21 +126,6 @@ void DidDrawCanvas::onDrawDRRect(const SkRRect& outer,
 
 void DidDrawCanvas::onDrawPath(const SkPath& path, const SkPaint& paint) {
   MarkDrawIfNonTransparentPaint(paint);
-}
-
-void DidDrawCanvas::onDrawBitmap(const SkBitmap& bitmap,
-                                 SkScalar x,
-                                 SkScalar y,
-                                 const SkPaint* paint) {
-  did_draw_ = true;
-}
-
-void DidDrawCanvas::onDrawBitmapRect(const SkBitmap& bitmap,
-                                     const SkRect* src,
-                                     const SkRect& dst,
-                                     const SkPaint* paint,
-                                     SrcRectConstraint constraint) {
-  did_draw_ = true;
 }
 
 void DidDrawCanvas::onDrawImage(const SkImage* image,
