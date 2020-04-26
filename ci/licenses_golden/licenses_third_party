@@ -1,4 +1,4 @@
-Signature: 82cfbfd63bc2e26fcd9eaf0ae77a89a2
+Signature: 346ec293b40f222e882a583e0598ac4e
 
 UNUSED LICENSES:
 
@@ -7382,6 +7382,7 @@ FILE: ../../../third_party/dart/.gitconfig
 FILE: ../../../third_party/dart/.mailmap
 FILE: ../../../third_party/dart/.style.yapf
 FILE: ../../../third_party/dart/.vpython
+FILE: ../../../third_party/dart/41458.dart
 FILE: ../../../third_party/dart/PATENT_GRANT
 FILE: ../../../third_party/dart/benchmarks/IsolateJson/dart/sample.json
 FILE: ../../../third_party/dart/benchmarks/IsolateSpawn/dart/helloworld.dart
@@ -7757,6 +7758,8 @@ FILE: ../../../third_party/dart/runtime/vm/dispatch_table.cc
 FILE: ../../../third_party/dart/runtime/vm/dispatch_table.h
 FILE: ../../../third_party/dart/runtime/vm/field_table.cc
 FILE: ../../../third_party/dart/runtime/vm/field_table.h
+FILE: ../../../third_party/dart/runtime/vm/heap/tlab.h
+FILE: ../../../third_party/dart/runtime/vm/port_set.h
 FILE: ../../../third_party/dart/runtime/vm/timeline_macos.cc
 FILE: ../../../third_party/dart/runtime/vm/type_testing_stubs_test.cc
 FILE: ../../../third_party/dart/runtime/vm/type_testing_stubs_test.h
